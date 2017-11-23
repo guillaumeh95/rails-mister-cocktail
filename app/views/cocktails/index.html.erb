@@ -1,7 +1,22 @@
-<h1>Welcome to CocktailFever</h1>
+<div class="container">
+  <h1 class="text-center">CocktailFever</h1>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name.capitalize, cocktail_path(cocktail)%></li>
-  <% end %>
-</ul>
+  <div class="container">
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/random');">
+            <div>
+              <h2 class="title"><%= cocktail.name.capitalize %></h2>
+                <% cocktail.doses.each do |dose| %>
+                  <p class="hidden">
+                    <%= dose.ingredient.name %>
+                  </p>
+                <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
