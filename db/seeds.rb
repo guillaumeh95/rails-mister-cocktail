@@ -18,3 +18,4 @@ ingredients["drinks"].each do |ingredient|
   new_ingredient = Ingredient.create(name: ingredient["strIngredient1"])
 end
 
+Ingredient.order(:name)

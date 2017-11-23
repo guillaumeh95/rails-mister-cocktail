@@ -35,7 +35,11 @@
 .card-link:hover {
   opacity: 0.1;
 }
-.card-ingredients {
+.card-description {
+  h2 {
+    color: transparent;
+    margin-bottom: 30px;
+  }
   p {
     text-align: center;
     list-style: none;

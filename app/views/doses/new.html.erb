@@ -13,7 +13,7 @@
     <% end %>
 
     <%= f.input :description %>
-    <%= f.association :ingredient %>
+    <%= f.association :ingredient, collection: Ingredient.order(:name) %>
     <%= f.button :submit, class: "btn btn-primary" %>
   <% end %>
 </div>

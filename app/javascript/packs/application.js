@@ -9,18 +9,19 @@
 
 
 const cards = document.querySelectorAll(".card");
+
 cards.forEach((card) => {
   const ingredients = card.querySelectorAll("p");
   card.addEventListener("mouseenter", (event) => {
     ingredients.forEach((ingredient) => {
       ingredient.classList.remove("hidden");
     });
-    event.currentTarget.classList.add("card-ingredients");
+    event.currentTarget.classList.add("card-description");
   });
   card.addEventListener("mouseleave", (event) => {
     ingredients.forEach((ingredient) => {
       ingredient.classList.add("hidden");
     });
-    event.currentTarget.classList.remove("card-ingredients");
+    event.currentTarget.classList.remove("card-description");
   });
 });
