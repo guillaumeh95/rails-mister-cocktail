@@ -1,9 +1,10 @@
 <div class="container">
-  <h1 class="text-center">CocktailFever</h1>
   <div class="row">
-    <% @cocktails.each do |cocktail| %>
-      <%= render "shared/cards", cocktail: cocktail %>
-    <% end %>
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <%= render "shared/cards", cocktail: cocktail %>
+      <% end %>
+    </div>
   </div>
 </div>
 <!-- test -->
