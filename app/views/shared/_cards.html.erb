@@ -1,9 +1,15 @@
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-  <div class="card-category">Popular</div>
-  <div class="card-description">
-    <h2>Le Wagon Shanghai</h2>
-    <p>Very cool city, the best</p>
+<div class="col-xs-12 col-sm-4">
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 50%), url('<%= cl_image_path cocktail.photo, height: 400, width: 200 %>')">
+    <%= link_to "", cocktail_path(cocktail), class:"card-link" %>
+    <div>
+      <h2 class="title"><%= cocktail.name.capitalize %></h2>
+        <% cocktail.doses.each do |dose| %>
+          <p class="hidden">
+            <%= dose.ingredient.name %>
+            <i class="fa fa-glass" aria-hidden="true"></i>
+            <%= dose.description %>
+          </p>
+        <% end %>
+    </div>
   </div>
-  <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-  <a class="card-link" href="#" ></a>
 </div>
