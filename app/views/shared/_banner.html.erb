@@ -5,10 +5,11 @@
         loadDynamicBannerText("<%= @cocktail.name %>");
       </script>
     <% end %>
-    <span id="cocktail-title"></span>
+    <p id="cocktail-title" data-title="<%= @cocktail.name %>"></p>
     <div class="cocktail-details">
       <div class="cocktail-description">
         <h3>Description</h3>
+        <p><%= @cocktail.description %></p>
       </div>
       <div class="cocktail-ingredients">
         <h3> Ingredients </h3>
