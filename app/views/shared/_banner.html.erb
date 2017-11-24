@@ -6,6 +6,7 @@
       </script>
     <% end %>
     <p id="cocktail-title" data-title="<%= @cocktail.name %>"></p>
+    <br class="line-break">
     <div class="cocktail-details">
       <div class="cocktail-description">
         <h3>Description</h3>
@@ -24,11 +25,11 @@
               </li>
             <% end %>
           </ul>
-          <p><%= link_to '<i class="fa fa-plus" aria-hidden="true"></i> Add Dose'.html_safe, new_cocktail_dose_path(@cocktail), class:"btn btn-primary" %></p>
+          <p class="btn-round"><%= link_to '<i class="fa fa-plus" aria-hidden="true"></i>'.html_safe, new_cocktail_dose_path(@cocktail) %></p>
       </div>
     </div>
 
-    <p class="card-previous btn btn-danger"><%= link_to "Check Other Cocktails", cocktails_path %></p>
+    <p class="card-previous btn-round"><%= link_to '<i class="fa fa-reply" aria-hidden="true"></i>'.html_safe, cocktails_path %></p>
   </div>
 </div>
 
