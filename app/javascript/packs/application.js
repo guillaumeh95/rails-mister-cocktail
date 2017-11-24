@@ -9,7 +9,6 @@
 
 
 const cards = document.querySelectorAll(".card");
-
 cards.forEach((card) => {
   const ingredients = card.querySelectorAll("p");
   card.addEventListener("mouseenter", (event) => {
