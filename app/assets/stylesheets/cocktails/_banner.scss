@@ -9,11 +9,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 70px;
 }
 .banner-content {
   width: 1000px;
-  margin: auto;
-  padding: auto;
 }
 .banner h1 {
   font-size: 50px;
@@ -40,6 +39,8 @@
 .cocktail-details {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+  height: 40vh;
 }
 .cocktail-ingredients {
   flex: 0 1 500px;

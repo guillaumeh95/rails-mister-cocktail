@@ -4,7 +4,7 @@ function loadDynamicBannerText(title) {
   new Typed('#cocktail-title', {
     strings: [title],
     typeSpeed: 100,
-    loop: true,
+    loop: false,
     showCursor: false
   });
 }
