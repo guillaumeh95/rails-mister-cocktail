@@ -2,7 +2,6 @@
   color: white;
   text-align: center;
   height: calc(100vh - 70px);
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center center;
   display: flex;
@@ -40,7 +39,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 40vh;
+  height: 35vh;
 }
 .cocktail-ingredients {
   flex: 0 1 500px;
